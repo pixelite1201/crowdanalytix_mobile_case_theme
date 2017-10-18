@@ -1,3 +1,5 @@
+# This will help in manually segmenting the mobile front and back as separate images.User will click in the middle
+# and will tell whether he wants to save the left image i.e. 1 or the right i.e. 2
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
