@@ -1,15 +1,16 @@
+#Taking the maximum vote from different trained classifier result
 import os
 import pandas as pd
 import numpy as np
 
 from scipy.stats import mode
 
-list_files = ['/home/priyanka/crowdanalytix/all_sumbissions/70-75/new_ensemblesubmission.csv',
-              '/home/priyanka/crowdanalytix/all_sumbissions/60-65/sort_out_inception_res_small_528.csv',
-                '/home/priyanka/crowdanalytix/all_sumbissions/60-65/sort_output_crowd_latest_3013.csv',
-              '/home/priyanka/crowdanalytix/all_sumbissions/60-65/sort_output_crowd_latest_4192.csv',
-              '/home/priyanka/crowdanalytix/all_sumbissions/60-65/sort_out_vgg_my_loss_2358.csv',
-            '/home/priyanka/crowdanalytix/all_sumbissions/60-65/sort_submission34.csv']
+list_files = ['./all_sumbissions/70-75/new_ensemblesubmission.csv',
+              './all_sumbissions/60-65/sort_out_inception_res_small_528.csv',
+                './all_sumbissions/60-65/sort_output_crowd_latest_3013.csv',
+              './all_sumbissions/60-65/sort_output_crowd_latest_4192.csv',
+              './all_sumbissions/60-65/sort_out_vgg_my_loss_2358.csv',
+            './all_sumbissions/60-65/sort_submission34.csv']
 
 
 

@@ -15,9 +15,9 @@ import os
 import tqdm
 import hashlib
 from sklearn.preprocessing import LabelEncoder
-TRAIN_DIR = '/home/priyanka/Train'
-TEST_DIR = '/home/priyanka/Test'
-VALIDATION_DIR = '/home/priyanka/Validation'
+TRAIN_DIR = './Train'
+TEST_DIR = './Test'
+VALIDATION_DIR = './Validation'
 IMG_SIZE_H=256
 IMG_SIZE_W=128
 hashes={}

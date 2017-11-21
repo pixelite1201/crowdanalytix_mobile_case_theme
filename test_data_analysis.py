@@ -6,9 +6,9 @@ import cv2
 from matplotlib import pyplot as plt
 labels={}
 hashes={}
-TRAIN_DIR='/home/priyanka/Train_orig'
-FILE='/home/priyanka/output_inception_13493.csv'
-TEST_DIR='/home/priyanka/Test_orig'
+TRAIN_DIR='./Train_orig'
+FILE='./output_inception_13493.csv'
+TEST_DIR='./Test_orig'
 for theme in os.listdir(TRAIN_DIR):
         path = os.path.join(TRAIN_DIR, theme)
         for j in os.listdir(path):

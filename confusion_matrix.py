@@ -1,3 +1,4 @@
+## Create Confusion matrix using file cotaining true value and predicted value for a label
 import os
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
@@ -7,8 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
-DIR='/home/priyanka/Documents/output_inception_my_loss'
-TRAIN='/home/priyanka/Train'
+DIR='./output_inception_my_loss' #Directory containing file having true and predicted value
+TRAIN='./Train'
 Y_true=[]
 Y_pred=[]
 label=[]

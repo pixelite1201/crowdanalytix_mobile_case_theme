@@ -1,9 +1,10 @@
+# Plot histogram of image sizes
 import os
 import cv2
 import matplotlib.pyplot as plt
 X=[]
 Y=[]
-TRAIN_DIR='/home/priyanka/Train'
+TRAIN_DIR='./Train'
 for theme in os.listdir(TRAIN_DIR):
         path = os.path.join(TRAIN_DIR, theme)
         for j in os.listdir(path):

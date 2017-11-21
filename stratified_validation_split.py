@@ -1,3 +1,4 @@
+# Since the classes were highly imbalance, this script will do the stratified split
 import os
 import hashlib
 import cv2
@@ -6,8 +7,8 @@ import shutil
 from sklearn.model_selection import StratifiedShuffleSplit
 labels={}
 hashes={}
-TRAIN_DIR='/home/priyanka/Train'
-VALIDATION = '/home/priyanka/Validation'
+TRAIN_DIR='./Train'
+VALIDATION = './Validation'
 if not os.path.exists(VALIDATION):
     os.makedirs(VALIDATION)
 for theme in os.listdir(TRAIN_DIR):

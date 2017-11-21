@@ -1,3 +1,4 @@
+# Testing script
 from __future__ import division, print_function, absolute_import
 
 import cv2
@@ -15,8 +16,8 @@ import os
 import tqdm
 import hashlib
 from sklearn.preprocessing import LabelEncoder
-TRAIN_DIR = '/home/priyanka/Train'
-TEST_DIR = '/home/priyanka/Test'
+TRAIN_DIR = './Train'
+TEST_DIR = './Test'
 IMG_SIZE_H=420
 IMG_SIZE_W=210
 hashes={}

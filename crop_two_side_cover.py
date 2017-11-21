@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 import os                  #
-TRAIN_DIR = '/home/priyanka/Train_temp'  #  dealing with directories
+TRAIN_DIR = './Train'  #  dealing with directories
 old_X = 0
 old_Y = 0
 def store_point(event,x,y,flags,param):

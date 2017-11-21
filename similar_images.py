@@ -1,9 +1,10 @@
+# Many images are identical and are present under multiple themes as well as inside same theme. This script will remove the duplicate images under same label but not under different label.
 import os
 import hashlib
 import cv2
 labels={}
 hashes={}
-TRAIN_DIR='/home/priyanka/Val_Download'
+TRAIN_DIR='./Train'
 for theme in os.listdir(TRAIN_DIR):
         path = os.path.join(TRAIN_DIR, theme)
         for j in os.listdir(path):

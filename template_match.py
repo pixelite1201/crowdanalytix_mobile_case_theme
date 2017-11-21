@@ -1,13 +1,14 @@
+# There are many image containing front of the mobile along with back. But the front part of the mobile has only 6 different variation as shown in Template folder. This script will automaticall crop that front part if it matched the given template.
 import cv2
 import numpy as np
 import os
 import hashlib
 from matplotlib import pyplot as plt
-template = cv2.imread('/home/priyanka/Template/template.jpg',0)
+template = cv2.imread('./Template/template.jpg',0)
 w, h = template.shape[::-1]
 # All the 6 methods for comparison in a list
 meth = 'cv2.TM_CCOEFF_NORMED'
-TRAIN_DIR='/home/priyanka/Test/'
+TRAIN_DIR='./Train/'
 count=0
 for theme in os.listdir(TRAIN_DIR):
         path = os.path.join(TRAIN_DIR, theme)

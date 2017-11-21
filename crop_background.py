@@ -1,8 +1,9 @@
+# Will remove white background from the images
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-import os                  #
-TRAIN_DIR = '/home/priyanka/Test'  #  dealing with directories
+import os                  
+TRAIN_DIR = './Train'  #  dealing with directories
 
 for theme in os.listdir(TRAIN_DIR):
         path = os.path.join(TRAIN_DIR, theme)

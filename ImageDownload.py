@@ -9,10 +9,10 @@ import cStringIO
 
 
 
-TRAIN='/home/priyanka/Train'
-VALIDATION='/home/priyanka/Validation'
-TRAIN_DOWNLOAD='/home/priyanka/Train_Download'
-VAL_DOWNLOAD='/home/priyanka/Val_Download'
+TRAIN='./Train'
+VALIDATION='./Validation'
+TRAIN_DOWNLOAD='./Train_Download'
+VAL_DOWNLOAD='./Val_Download'
 if not os.path.exists(TRAIN_DOWNLOAD):
     os.mkdir(TRAIN_DOWNLOAD)
 if not os.path.exists(VAL_DOWNLOAD):

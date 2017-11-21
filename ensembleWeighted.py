@@ -1,3 +1,4 @@
+# Weighted ensemble of different classifier
 import os
 import pandas as pd
 import numpy as np
@@ -35,7 +36,7 @@ def weightedEnsemble(folderSubs, weightFile):
 
     best_class = {k : max(v.iteritems(), key=operator.itemgetter(1))[0] for k, v in weightedOuputs.items()}
 
-    f = open("/home/priyanka/crowdanalytix/all_sumbissions/67-70-weighted_ensemble.csv", 'w')
+    f = open("./all_sumbissions/67-70-weighted_ensemble.csv", 'w')
     f.write('id,Mobile_Theme\n')
     for k, v in best_class.items():
         f.write(k + ',' + v)
@@ -43,6 +44,6 @@ def weightedEnsemble(folderSubs, weightFile):
     f.close()
 
 if __name__ == "__main__":
-    folderSubs = "/home/priyanka/crowdanalytix/all_sumbissions/65-70"
-    weightFile = "/home/priyanka/crowdanalytix/all_sumbissions/65-70-accuracy-map.csv"
+    folderSubs = "./all_sumbissions/65-70"
+    weightFile = "./all_sumbissions/65-70-accuracy-map.csv"
     weightedEnsemble(folderSubs, weightFile)

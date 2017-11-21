@@ -10,7 +10,7 @@ def get_soup(url,header):
     return BeautifulSoup(urllib2.urlopen(urllib2.Request(url,headers=header)),'html.parser')
 
 
-filePath = '/home/priyanka/Train/Automobile/Img5591.jpg'
+filePath = './Train/Automobile/Img5591.jpg'
 searchUrl = 'http://www.google.hr/searchbyimage/upload'
 multipart = {'encoded_image': (filePath, open(filePath, 'rb')), 'image_content': ''}
 response = requests.post(searchUrl, files=multipart, allow_redirects=False)

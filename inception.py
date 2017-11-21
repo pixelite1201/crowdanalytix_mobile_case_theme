@@ -1,3 +1,4 @@
+# Training script
 from __future__ import division, print_function, absolute_import
 
 import cv2
@@ -14,7 +15,7 @@ from matplotlib import pyplot as plt
 import os
 import tqdm
 from sklearn.preprocessing import LabelEncoder
-TRAIN_DIR = '/home/priyanka/Train'
+TRAIN_DIR = './Train'
 IMG_SIZE_H=420
 IMG_SIZE_W=210
 X=[]

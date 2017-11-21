@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import itertools
 import warnings
 warnings.filterwarnings('ignore')
-DIR='/home/priyanka/crowdanalytix/all_sumbissions/all_diff/'
+DIR='./all_sumbissions/all_diff/'
 list_files=[]
 for file in os.listdir(DIR):
     list_files.append(os.path.join(DIR,file))
